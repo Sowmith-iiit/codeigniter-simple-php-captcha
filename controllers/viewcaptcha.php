@@ -6,7 +6,10 @@ class Viewcaptcha extends CI_Controller {
 	{
 		$this->load->library('captcha');
 
-		$captcha_config = unserialize($this->session->userdata('captcha_config'));
+		if (!$captcha_config = $this->session->userdata('captcha_config'))
+			return;
+		
+		$captcha_config = unserialize($captcha_config);
 		$this->session->unset_userdata('captcha_config');
 		
 		// Use milliseconds instead of seconds

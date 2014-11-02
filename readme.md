@@ -1,5 +1,7 @@
 # A simple CodeIgniter PHP CAPTCHA script
 
+WARNING: This package is no longer being maintained.
+
 This is a fork of Cory LaViska's simple, highly readable PHP captcha: https://github.com/claviska/simple-php-captcha
 
 This is the exact same script, modified to work with the CodeIgniter PHP framework.
